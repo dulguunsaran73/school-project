@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-р ангийн Биологи</title>
+    <style>
+        /* 🟢 Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("bio background.html");	
+	    background-size: cover;
+	    background-position: center;
+        }
+
+        /* 🟢 Header Styling */
+        header {
+            background-color: transparent;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #010a21;
+            border-radius: 5px;
+        }
+
+        /* 🟢 Section Styling */
+        .section {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            background-color: transparent;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        /* 🟢 Active Section Styling */
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🟢 Header Section -->
+    <header>
+        <div class="logo">
+            <h1>11-р ангийн Биологи</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Нүүр</a></li>
+                <li><a href="#" onclick="showSection('videos')">Видео</a></li>
+                <li><a href="#" onclick="showSection('lessons')">Тестүүд</a></li>
+                <li><a href="#" onclick="showSection('contact')">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🟢 Content Sections -->
+    <div id="home" class="section active">
+        <h2>Биологийн гайхамшигт ертөнцөд тавтай морил</h2>
+        <p>Эндээс та бүхэн 11р ангийн 3р улиралд үзсэн хичээлээ бататган үзэх боломжтой сайт юм.</p>
+    </div>
+    <div id="videos" class="section">
+        <h2>Видео хичээлүүд</h2>
+ 	<li class="hvr-grow-shadow">
+        <a class="hvr-curl-bottom-right" href="Зүрхний үйл ажиллагаа 1.34.mp4">
+          <img width="300" src="Зүрхний үйл ажиллагаа нүүр.jpg">
+           <h2 class="book-title">Зүрхний үйл ажиллагаа</h2>
+	</a>
+	</li>
+
+   	<li class="hvr-grow-shadow">
+        <a class="hvr-curl-bottom-right" href="Цус ба тунгалгийн зангилаа.mp4">
+          <img width="300" src="Цус ба тунгалгийн зангилаа нүүр.jpg">
+           <h2 class="book-title">Цус ба тунгалгийн шингэн</h2>
+</a></li>
+                                   
+	<li class="hvr-grow-shadow">
+        <a class="hvr-curl-bottom-right" href="Цусны эргэлт.mp4">
+          <img width="300" src="Цусны эргэлт нүүр.jpg">
+           <h2 class="book-title">Цусны эргэлт ба зүрхний бүтэц</h2>
+                                        </a></li>
+                          
+	<li class="hvr-grow-shadow">
+        <a class="hvr-curl-bottom-right" href="Судасны төрөл.mp4">
+          <img width="300" src="Судасны төрлийн нүүр.jpg">
+           <h2 class="book-title">Судасны төрөл</h2>
+                                        </a></li>
+    </div>
+  <div id="lessons" class="section">
+        <h2>Тестүүд</h2>
+        
+        <!-- Асуулт 1 -->
+        <div class="question">
+            <p>Сээр нуруутан амьтны зүрхний хэдэн хэсэг байдаг вэ?</p>
+            <div class="options">
+                <input type="radio" id="q1a" name="q1" value="1">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q1b" name="q1" value="2">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q1c" name="q1" value="3">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q1d" name="q1" value="4">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+
+        <!-- Асуулт 2 -->
+        <div class="question">
+            <p>Зүрхний ямар хэсэг цусыг артери руу зөөвөрлөх үүрэгтэй вэ?</p>
+            <div class="options">
+                <input type="radio" id="q2a" name="q2" value="a">
+                <label for="q2a">Баруун ховдол</label><br>
+                <input type="radio" id="q2b" name="q2" value="b">
+                <label for="q2b">Зүүн ховдол</label><br>
+                <input type="radio" id="q2c" name="q2" value="c">
+                <label for="q2c">Баруун тосгүүр</label><br>
+                <input type="radio" id="q2d" name="q2" value="d">
+                <label for="q2d">Зүүн тосгуур</label>
+            </div>
+        </div>
+ <!-- Асуулт 3 -->
+        <div class="question">
+            <p>Сээр нуруутан амьтанд хэдэн төрлийн цусны эргэлт байдаг вэ?</p>
+            <div class="options">
+                <input type="radio" id="q3a" name="q3" value="1">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q3b" name="q3" value="2">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q3c" name="q3" value="3">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q3d" name="q3" value="4">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 4 -->
+        <div class="question">
+            <p>Сээр нуруутан амьтны "диффуз" цусны эргэлт гэж юу вэ?</p>
+            <div class="options">
+                <input type="radio" id="q4a" name="q4" value="Цус зөвхөн зүрхнээс гардаг.">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q4b" name="q4" value="Цус артерийн судаснаас шууд эрхтэн руу ордог.">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q4c" name="q4" value="Цус эхлээд эргэлтэнд орж, дараа нь эрхтэнд хүрдэг.">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q4d" name="q4" value="Цус нь эд эрхтэн хооронд дамжихгүй.">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 5 -->
+        <div class="question">
+            <p>Хялгасан судас хоорондоо дахин нэгдсэнээр ямар судсыг бүрдүүлдэг вэ?</p>
+            <div class="options">
+                <input type="radio" id="q5a" name="q5" value="Артерийн судас">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q5b" name="q5" value="Венийн судас">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q5c" name="q5" value="Хялгасан судас">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q5d" name="q5" value="Гол судас(Аорт)">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 6 -->
+        <div class="question">
+            <p>Зүрхний шигдээсийн эрсдэл өндөр болгох хүчин зүйлсийн аль нь зөв бэ?</p>
+            <div class="options">
+                <input type="radio" id="q6a" name="q6" value="Тамхи татах, өндөр даралт, хэтрүүлсэн хооллолт">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q6b" name="q6" value="Спортын тогтмол дасгал хийх">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q6c" name="q6" value="Бага зэрэг нойр авах">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q6d" name="q6" value="Ус их уух">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 7 -->
+        <div class="question">
+            <p>Эдийн шингэн ба цусны ялгаа юу вэ?</p>
+            <div class="options">
+                <input type="radio" id="q7a" name="q7" value="Эдийн шингэн нь зүрхнээс гаралтай, цус нь амьсгалын замаас гаралтай.">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q7b" name="q7" value="Эдийн шингэн нь цусны оронд тэжээл зөөвөрлөдөг.">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q7c" name="q" value="Эдийн шингэн нь эсийн амьдралын үйл ажиллагаанд оролцдог.">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q7d" name="q7" value="Эдийн шингэн нь бодисын солилцоонд оролцохгүй.">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 8 -->
+        <div class="question">
+            <p>Цусны хэмжээ болон эдийн шингэн хоёрын харьцааг юу гэж нэрлэдэг вэ?</p>
+            <div class="options">
+                <input type="radio" id="q8a" name="q8" value="Лимфийн шингэн">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q8b" name="q8" value="Олон төрлийн шингэний систем">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q8c" name="q8" value="Цусны шахалт">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q8d" name="q8" value="Цусны хэмжээний баланс">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 9 -->
+        <div class="question">
+            <p>Тунгалгийн шингэний гол үүрэг юу вэ?</p>
+            <div class="options">
+                <input type="radio" id="q9a" name="q9" value="Цусны хаягдлыг боловсруулах">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q9b" name="q9" value="Эсийн өвчнийг хамгаалах">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q9c" name="q9" value="Өндөр темпратурт тогтворжих">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q9d" name="q9" value="Хүчилтөрөгч тээвэрлэх">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+ <!-- Асуулт 10 -->
+        <div class="question">
+            <p>Тунгалгийн шингэний систем нь ямар эсүүдийг агуулдаг вэ?</p>
+            <div class="options">
+                <input type="radio" id="q10a" name="q10" value="Лейкоцит">
+                <label for="q1a">1</label><br>
+                <input type="radio" id="q10b" name="q10" value="Эритроцит">
+                <label for="q1b">2</label><br>
+                <input type="radio" id="q10c" name="q10" value="Тромбоцит">
+                <label for="q1c">3</label><br>
+                <input type="radio" id="q10d" name="q10" value="Лимфоцит">
+                <label for="q1d">4</label>
+            </div>
+        </div>
+
+        <button class="btn" onclick="checkAnswers()">Шалгах</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+
+            // Асуулт 1-ийн хариулт шалгах
+            if (document.getElementById('q1d').checked) {
+                score++;
+            }
+
+            // Асуулт 2-ийн хариулт шалгах
+            if (document.getElementById('q2b').checked) {
+                score++;
+            }
+            if (document.getElementById('q3b').checked) {
+                score++;
+	    }
+            if (document.getElementById('q4c').checked) {
+                score++;
+	    }
+            if (document.getElementById('q5b').checked) {
+                score++;
+	    }
+            if (document.getElementById('q6a').checked) {
+                score++;
+	    }
+            if (document.getElementById('q7c').checked) {
+                score++;
+	    }
+            if (document.getElementById('q8d').checked) {
+                score++;
+	    }
+            if (document.getElementById('q9b').checked) {
+                score++;
+	    }
+            if (document.getElementById('q10d').checked) {
+                score++;
+	    }
+
+            // Үр дүнг харуулах
+            let result = document.getElementById('result');
+            result.innerHTML = "Таны оноо: " + score + "/2";
+        }
+    </script>
+    </div>
+    <div id="contact" class="section">
+        <h2>Холбоо Барих</h2>
+        <p>Хэрвээ танд асуулт байвал бидэнтэй холбогдоорой.</p>
+    </div>
+
+    <script>
+        // Function to show the corresponding section and hide others
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            var sectionToShow = document.getElementById(sectionId);
+            if (sectionToShow) {
+                sectionToShow.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
